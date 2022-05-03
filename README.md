@@ -6,3 +6,8 @@ Supported environment variables
 1. `LE_EMAIL`: the email address used by letsencrypt to generate ssl certificates.
 2. `LE_REDIRECT`(yes/no): whether to redirect http to https after installation of the certificate.
 3. `PROXY_SSL`: whether you want to issue `ssl` certificates for the domains.
+
+To persist the certificates mount a volume at `/etc/letsencrypt`
+Nginx virtual hosts can be mounted at
+1. `/etc/nginx/sites-enabled`: support any file name
+2. `/etc\/nginx\/http.d`: supports only files ending with `.conf`
