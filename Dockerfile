@@ -8,6 +8,8 @@ RUN mkdir -p /etc/nginx/sites-enabled
 
 RUN sed -i '/include \/etc\/nginx\/http.d/a include \/etc\/nginx\/sites-enabled\/\*;' /etc/nginx/nginx.conf
 
+RUN sed -i '/user nginx;/a pid \/run\/nginx.pid;' /etc/nginx/nginx.conf
+
 COPY ./scripts/. .
 
 
