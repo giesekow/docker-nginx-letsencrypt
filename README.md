@@ -10,4 +10,4 @@ Supported environment variables
 To persist the certificates mount a volume at `/etc/letsencrypt`
 Nginx virtual hosts can be mounted at
 1. `/etc/nginx/sites-enabled`: support any file name
-2. `/etc\/nginx\/http.d`: supports only files ending with `.conf`
+2. `/etc/nginx/http.d`: supports only files ending with `.conf`
